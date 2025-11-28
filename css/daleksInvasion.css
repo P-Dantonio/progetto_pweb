@@ -1,0 +1,238 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: green; 
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+#board {
+    background-color: black;
+    background-image: url('space.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    border: 1px solid white;
+}
+
+#scoreboard {
+    background-color: black;
+    border-top: 1px solid white;
+    padding: 10px;
+    margin-top: 10px;
+    position: relative;
+}
+
+#score {
+    color: green; 
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#login-form, #register-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 10;
+    border: 4px double green;
+    width: 300px;
+}
+
+#login-form input, #register-form input, 
+#login-form button, #register-form button {
+    width: 60%; 
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+#login-form button, #register-form button {
+    background: #4CAF50;
+    color: white;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#login-form button:hover, 
+#register-form button:hover {
+    background: #45a049;
+}
+
+.input-container {
+    position: relative;
+    width: 100%; 
+}
+
+.input-container input {
+    width: 100%; 
+    padding-right: 40px; 
+}
+
+#togglePassword, #toggleRegisterPassword, #toggleConfirmPassword {
+    position: absolute;
+    right: 60px; 
+    top: 50%; 
+    transform: translateY(-50%); /* Centra verticalmente l'icona */
+    cursor: pointer;
+    width: 20px; 
+    height: 20px;
+    z-index: 1; 
+}
+
+#login-form button:hover, 
+#register-form button:hover {
+    background: #45a049;
+}
+
+#message-box {
+    display: none;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+#game-over-message {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    text-align: center;
+    z-index: 10;
+    border-radius: 10px;
+}
+
+#game-over-text {
+    color: #45a050;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 20px;
+}
+
+#end-buttons {
+    display: none;
+    margin-top: 20px; 
+}
+
+#end-buttons button {
+    background: #4CAF50;
+    color: white;
+    cursor: pointer;   
+    margin: 10px 5px; 
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#end-buttons button:hover {
+    background-color: #45a049;
+}
+
+
+#leaderboard-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 60%; 
+    background-color: #1a1a1a; 
+    color: #00FF00; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); 
+    font-family: 'Courier New', Courier, monospace; 
+    border-radius: 8px;
+    border: 2px solid #333; 
+}
+
+table thead th {
+    background-color: #333; 
+    color: #00FF00; 
+    padding: 10px;
+    text-align: center;
+    font-size: 16px; 
+}
+
+table tbody td {
+    padding: 10px;
+    border: 1px solid #555; 
+    font-size: 14px; 
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #2a2a2a; 
+}
+
+table tbody td, table thead th {
+    text-align: center;
+}
+
+table tbody tr:hover {
+    background-color: #444; 
+}
+
+#leaderboard-container.show {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+}
+
+#back-button {
+    background: #4CAF50;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#back-button:hover {
+    background-color: #45a049;
+}
+
+.help-icon {
+    width: 30px; 
+    height: 30px;
+}
+
+footer {
+    position: fixed;
+    bottom: 10px;  
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+    background-color: black; 
+    padding: 10px 0; 
+    border-top: 1px solid green; 
+}

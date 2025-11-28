@@ -1,0 +1,32 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+    color: green; 
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+
+.tardis-emoji, .dalek-emoji {
+    vertical-align: middle; 
+}
+
+.tardis-emoji{
+    height: 2%;
+    width: 2%;
+}
+
+.dalek-emoji{
+    height: 5%;
+    width: 5%;
+}
+
+.back-button{
+    display: block;
+    margin: 20px 0;
+    height: 8%;
+    width: 8%;
+}
+
+
